@@ -1,15 +1,30 @@
-# PhoenixElmWebpackHerokuExampleApp
+# Phoenix + Elm + Webpack + Heroku Example App
+
+## What is this?
+
+This is a [Phoenix] application scaffold demonstrating changes to be made to
+prepare for deployment to [Heroku] to run the application and [Elm], using
+[webpack] to compile and build all assets.
+
+[Phoenix]: http://www.phoenixframework.org/
+[Heroku]: https://www.heroku.com/
+[Elm]: http://elm-lang.org/
+[webpack]: https://webpack.github.io/
+
+## Running Phoenix
 
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
+  * Create and migrate your database with `mix ecto.create && mix
+    ecto.migrate`
   * Install Node.js dependencies with `npm install`
   * Start Phoenix endpoint with `mix phoenix.server`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
+Ready to run in production? Please [check our deployment
+guides](http://www.phoenixframework.org/docs/deployment).
 
 ## Learn more
 
