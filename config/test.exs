@@ -12,8 +12,6 @@ config :logger, level: :warn
 # Configure your database
 config :phoenix_elm_webpack_heroku_example_app, PhoenixElmWebpackHerokuExampleApp.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
   database: "phoenix_elm_webpack_heroku_example_app_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
