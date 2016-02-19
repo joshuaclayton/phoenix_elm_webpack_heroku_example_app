@@ -1,0 +1,13 @@
+@import "../vendor/normalize";
+@import "variables";
+
+body {
+  color: $dark-gray;
+  font-family: Helvetica, sans-serif;
+
+  .container {
+    margin: 0 auto;
+    width: 60%;
+    min-width: 15em;
+  }
+}

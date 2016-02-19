@@ -5,13 +5,13 @@ use Mix.Config
 #
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
-# with brunch.io to recompile .js and .css sources.
+# with webpack to recompile .js and .css sources.
 config :phoenix_elm_webpack_heroku_example_app, PhoenixElmWebpackHerokuExampleApp.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin"]]
+  watchers: [node: ["node_modules/webpack/bin/webpack.js", "--watch", "--color"]]
 
 # Watch static and templates for browser reloading.
 config :phoenix_elm_webpack_heroku_example_app, PhoenixElmWebpackHerokuExampleApp.Endpoint,
