@@ -11,6 +11,21 @@ prepare for deployment to [Heroku] to run the application and [Elm], using
 [Elm]: http://elm-lang.org/
 [webpack]: https://webpack.github.io/
 
+## Deploying to Heroku
+
+To deploy to Heroku, create a Heroku app (if you haven't already), and then
+prepare the application for deployment by setting `SECRET_KEY_BASE` and
+configuring both buildpacks.
+
+    heroku create
+    heroku config:set SECRET_KEY_BASE=$(mix phoenix.gen.secret)
+    heroku buildpacks:set https://github.com/gjaldon/phoenix-static-buildpack
+    heroku buildpacks:add --index 1 https://github.com/HashNuke/heroku-buildpack-elixir
+
+This repository demonstrates NPM including elm as the only requirement for
+compiling Elm on the server (Webpack handles all the heavy lifting of asset
+compilation and concatenation to `app.js`).
+
 ## Running Phoenix
 
 To start your Phoenix app:
