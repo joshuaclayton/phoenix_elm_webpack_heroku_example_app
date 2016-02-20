@@ -1,7 +1,8 @@
 {
-  "repository": {
-  },
+  "repository": {},
   "dependencies": {
+    "elm": "^0.16.0",
+    "elm-webpack-loader": "^2.0.0",
     "node-sass": "^3.4.2",
     "phoenix": "file:deps/phoenix",
     "phoenix_html": "file:deps/phoenix_html"
